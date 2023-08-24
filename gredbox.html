@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      section{
+         height: 800px;
+         background-color: burlywood;
+        display: grid;
+        grid-template-rows:150px   1fr 1fr;
+        grid-template-columns: 150px   1fr 1fr ;
+        grid-template-rows:repeat( 150px 3, 1fr 152px) ;
+        grid-template-columns:repeat(3,1fr) ;
+        row-gap: 1px;
+        column-gap: 1px;
+        
+
+      }
+      .box{
+        /* width: 150px; */
+        /* height: 150px; */
+        background-color: rgb(34, 255, 0);
+        margin: 5px;
+        color: rgb(9, 13, 16);
+        font-size: 20px;
+        text-align: center;
+      }
+      #header{
+        grid-column: 1/4;
+
+      }
+      #data{
+        
+
+        grid-column: 2/4;
+        
+      }
+      #section{
+        grid-row: 2/4;
+      }
+
+
+
+      #footer{
+        grid-column: 1/4 ;
+        padding: 50px;
+      }
+
+
+      
+    </style>
+</head>
+<body>
+
+    
+    <section>
+      <div class="box" id="header">Header</div>
+      <div class="box" id="section">section</div>
+      <div class="box" id="data"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box" id="footer">footer</div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>  
+      
+    
+</body>
+</html>
